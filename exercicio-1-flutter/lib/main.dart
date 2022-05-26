@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -66,6 +64,12 @@ class _HomePageState extends State<HomePage> {
           switch (index) {
             case 0:
               print("Adicionou");
+              // new GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushNamed(context, "myRoute");
+              //   },
+              //   child: new Text("Texto adicionado"),
+              // );
               break;
             case 1:
               print("Removeu");
@@ -89,7 +93,14 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blue,
         child: const Icon(Icons.add, color: Colors.black),
-        onPressed: () {},
+        onPressed: () {
+          // new GestureDetector(
+          //   onTap: () {
+          //     Navigator.pushNamed(context, "myRoute");
+          //   },
+          //   child: new Text("Texto adicionado"),
+          // );
+        },
       ),
     );
   }
